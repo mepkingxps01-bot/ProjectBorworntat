@@ -1,0 +1,12 @@
+node_modules/
+frontend/dist/
+frontend/.vite/
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/**/__pycache__/
+*.pyc
+*.db
+.env
+*.db-journal
+.claude/
