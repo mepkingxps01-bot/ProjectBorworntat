@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Landing from './pages/Landing';
 import CharacterCreate from './pages/CharacterCreate';
 import Dashboard from './pages/Dashboard';
@@ -6,7 +6,7 @@ import Battle from './pages/Battle';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/create" element={<CharacterCreate />} />
@@ -14,6 +14,6 @@ export default function App() {
         <Route path="/battle" element={<Battle />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
